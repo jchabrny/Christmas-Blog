@@ -1,0 +1,174 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(215, 223, 252) 0%,
+    rgb(255, 255, 255) 0%,
+    rgb(215, 223, 252) 84%
+  );
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100%;
+}
+
+nav {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 10px;
+}
+
+nav .navbar .logo-link {
+  padding: 0;
+}
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #be3144;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #be3144;
+  text-transform: uppercase;
+}
+
+a:hover {
+  color: #50b5da;
+  transition: all 0.3s ease-in-out;
+}
+
+hr {
+  font-size: 1.5em;
+  color: darkgreen;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 48px;
+  font-weight: 300px;
+  opacity: 0.9;
+}
+
+h2,
+h3 {
+  text-align: center;
+  opacity: 0.7;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+strong {
+  color: #50b5da;
+}
+
+.navbar {
+  padding: 80px;
+}
+
+.button {
+  border: 2px solid #50b5da;
+  background-color: #50b5da;
+  padding: 5px;
+  width: 20%;
+  border-radius: 4px;
+  box-shadow: 10px 5px 5px #c0c0c0;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+}
+
+.logo {
+  border-radius: 35px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.subcontainer {
+  display: flex;
+  background-color: #e7eaf6;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 10px 5px 5px #c0c0c0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 500;
+}
+
+.subcontainer p {
+  opacity: 0.7;
+  line-height: 2;
+  text-align: justify;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 60px -16px #50b5da;
+}
+
+.text-link {
+  text-transform: none;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: 5% 80% 15%;
+  padding: 25px 45px;
+}
+
+.flex-container p {
+  margin: -1px;
+}
+
+.footer-icon {
+  font-size: 40px;
+}
+
+@media (max-width: 576px) {
+  .center,
+  .header-icon,
+  .footer-icon {
+    display: none;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .flex-container {
+    font-size: 14px;
+  }
+
+  .button {
+    width: 40%;
+  }
+}
